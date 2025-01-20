@@ -1,0 +1,272 @@
+/* General Reset */
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #030303; /* Light background color */
+    color: #8b61c2;
+}
+
+/* Top Bar */
+.top-bar {
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px 20px;
+    background-color: #000000;
+    font-size: 14px;
+    color: #8b61c2;
+}
+
+.top-bar-links a {
+    text-decoration: none;
+    margin: 0 15px;
+    color: #8b61c2;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.top-bar-links a:hover {
+    color: #8b61c2;
+}
+
+/* Header Section */
+header {
+    background: #030303;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.logo {
+    font-size: 48px;
+    font-family: 'Montserrat', sans-serif;
+    color: #8b61c2;
+    font-weight: bold;
+}
+
+.nav a {
+    text-decoration: none;
+    margin: 0 15px;
+    font-family: 'PT Sans', sans-serif;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav a:hover {
+    color: #007b5e;
+}
+
+/* Promo Bar */
+.promo-bar {
+    text-align: center;
+    padding: 10px;
+    background-color: #f4e1d2;
+    color: #555;
+    font-size: 16px;
+}
+
+.promo-bar a {
+    color: #8b61c2;
+    text-decoration: underline;
+}
+
+/* Mint NFT Section */
+.mint-nft {
+    position: relative;
+    padding: 20px 0;
+    background-color: #f9f9f9;
+}
+
+.mint-container {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
+}
+
+.mint-image {
+    position: relative;
+    overflow: hidden;
+    height: 500px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.mint-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.7);
+}
+
+.mint-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    text-align: left;
+}
+
+.mint-content h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #ffd700;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.mint-content p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.mint-content ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.mint-content li {
+    position: relative;
+    padding-left: 25px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.mint-content li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #ffd700;
+    font-size: 18px;
+}
+
+/* NFT Upload Section */
+.nft-upload {
+    padding: 2rem 0;
+    background-color: #090909;
+}
+
+.upload-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #565657;
+    color: #060606;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.upload-container h2 {
+    background-color: #565657;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.upload-form {
+    background-color: #565657;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.file-upload {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.file-label {
+    padding: 0.5rem 1rem;
+    background-color: #8b61c2;
+    color: #000000;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#file-input {
+    display: none;
+}
+
+#file-name {
+    font-size: 0.9rem;
+    color: #413e3e;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.submit-btn {
+    padding: 0.75rem;
+    background-color: #8b61c2;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.submit-btn:hover {
+    background-color: #050405;
+}
+
+/* Divider */
+.divider {
+    height: 4px;
+    background-color: #e1e1e1;
+    margin: 40px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .mint-content {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav a {
+        margin: 5px 0;
+    }
+
+    .mint-image {
+        height: auto;
+    }
+}
